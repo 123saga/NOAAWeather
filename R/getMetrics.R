@@ -14,7 +14,7 @@ getMetrics <- function(online=TRUE){
     Metrics <- fromJSON(RCurl::getURL(URL))
   } else{
 
-    data("Metrics")
+    data("Metrics",envir = environment())
   }
 
   #return

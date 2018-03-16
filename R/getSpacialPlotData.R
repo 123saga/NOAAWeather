@@ -25,7 +25,7 @@ getSpatialPlotData  <- function(online=TRUE,
   } else {
 
 
-    data("Distance_data_master")
+    data("Distance_data_master",envir = environment())
     Locations <- Distance_data_master
 
     #get list of location id for API call
@@ -37,7 +37,7 @@ getSpatialPlotData  <- function(online=TRUE,
     # check offline flag
     if(online==FALSE){
       ## connect to rda file
-      data("weather_data")
+      data("weather_data",envir = environment())
       weather_data_master<- weather_data
 
       weather_data <- weather_data_master%>%

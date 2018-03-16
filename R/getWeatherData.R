@@ -22,13 +22,16 @@
 #' @import jsonlite
 #' @importFrom tidyr separate
 #' @import dplyr
-#' @importFrom lubridate days
+#' @importFrom lubridate days wday
 #' @import ggplot2
 #' @import ggmap
 #' @import ggExtra
 #' @import grid
 #' @importFrom  gridExtra grid.arrange
 #' @import tcR
+#' @importFrom scales rescale
+#' @importFrom stats quantile time
+#' @importFrom utils data
 #' @export
 #' @examples
 #' data <- getWeatherData(FALSE,"Austin","TX")
@@ -65,7 +68,7 @@ getWeatherData  <- function(online=TRUE,
 
       } else {
 
-        data("Distance_data_master")
+        data("Distance_data_master",envir = environment())
         Locations <- Distance_data_master
 
         if(is.na(dist)){
@@ -109,7 +112,7 @@ getWeatherData  <- function(online=TRUE,
           # check online flag
           if(online==FALSE){
             ## connect to rda file
-            data("weather_data")
+            data("weather_data",envir = environment())
 
             weather_data <- weather_data%>%
               filter(id %in% location_ids$id)%>%

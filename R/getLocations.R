@@ -21,7 +21,7 @@ getAllLocations <- function(online=TRUE,state=NA){
     Locations <- fromJSON(RCurl::getURL(URL))
   } else{
 
-    data("Locations")
+    data("Locations",envir = environment())
   }
 
   if(st %in% (unique(Locations$state)) | is.na(st)){
