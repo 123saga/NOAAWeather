@@ -12,6 +12,9 @@
 plot_spatial <- function(online=TRUE,Date="2017-01-01", measure="t_max") {
 
   onl<- online
+  if(onl==TRUE){
+    print("Retrieving data for all the avaialble Locations takes time, please wait!")
+  }
   Date<- as.Date(Date)
   measure<- as.character(measure)
 
@@ -32,7 +35,7 @@ plot_spatial <- function(online=TRUE,Date="2017-01-01", measure="t_max") {
 
     CS<-ggmap(map) + geom_point(data = data, aes(x=longitude, y=latitude, color = value), alpha=0.9, size=5) +
       theme_minimal(base_size = 20) + scale_color_gradientn(colours =
-                                                              c('#313695','#4575b4','#fdae61','#74add1','#abd9e9','#f46d43','#d73027','#a50026'))
+                                                              c("#313695","#4575b4", "#74add1","#abd9e9","#fdae61", "#f46d43","#d73027","#a50026"))
 
     #Alaska
     suppressMessages(map<-get_map(location='Alaska', zoom=4, maptype = "terrain",
@@ -40,7 +43,7 @@ plot_spatial <- function(online=TRUE,Date="2017-01-01", measure="t_max") {
 
     AK <- ggmap(map) + geom_point(data = data, aes(x=longitude, y=latitude, color = value), alpha=1, size=5) +
       theme_minimal(base_size = 20) + scale_color_gradientn(colours =
-                                                              c('#313695','#4575b4','#fdae61','#74add1','#abd9e9','#f46d43','#d73027','#a50026'))+
+                                                              c("#313695","#4575b4", "#74add1","#abd9e9","#fdae61", "#f46d43","#d73027","#a50026"))+
       theme(legend.position = 'none')
 
     #Hawaii
@@ -48,7 +51,7 @@ plot_spatial <- function(online=TRUE,Date="2017-01-01", measure="t_max") {
                                   source='google',color='bw'))
     HI <- ggmap(map) + geom_point(data = data, aes(x=longitude, y=latitude, color = value), alpha=1, size=5) +
       theme_minimal(base_size = 20) + scale_color_gradientn(colours =
-                                                              c('#313695','#4575b4','#fdae61','#74add1','#abd9e9','#f46d43','#d73027','#a50026'))+
+                                                              c("#313695","#4575b4", "#74add1","#abd9e9","#fdae61", "#f46d43","#d73027","#a50026"))+
       theme(legend.position = 'none')
 
     #plotting on map
