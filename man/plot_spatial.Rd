@@ -20,7 +20,12 @@ geo-spatial heat map for a given date and measure across all NOAA weather statio
 generate geo-spatial heat map for a given date and measure across all NOAA weather stations
 }
 \examples{
+\dontrun{
 plot_spatial(online=FALSE,
-Date="2018-01-10",
+Date="2017-01-10",
 measure="t_max")
+plot_spatial(online=TRUE,
+Date="2017-01-10",
+measure="t_official")
+}
 }

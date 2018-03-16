@@ -29,7 +29,7 @@ calendar heat map for a given time period, measure, location, and state
 generate calendar heat map for a given time period, measure, location, and state
 }
 \examples{
-plot_calhmap(online=TRUE,from="2018-01-01",
-to="2018-01-03", measure="t_max",
+plot_calhmap(online=FALSE,from="2017-01-01",
+to="2017-01-03", measure="t_max",
 location='Austin', state='TX')
 }

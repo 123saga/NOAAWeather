@@ -27,7 +27,12 @@ box plot for a given time period, measure, location, and state
 generate box plot for a given time period, measure, location, and state
 }
 \examples{
-plot_boxplot(online=TRUE,from="2018-01-01",
-to="2018-01-03", measure="t_max",
+\dontrun{
+plot_boxplot(online=FALSE,from="2017-01-01",
+to="2017-01-03", measure="t_max",
 location='Austin', state='TX')
+plot_boxplot(online=TRUE,from="2017-01-01",
+to="2017-01-03", measure="t_max",
+location='Austin', state='TX')
+}
 }

@@ -37,11 +37,12 @@ get Weather data from NOAA Web API for a given location, time period, and distan
    "ws_max" : 10sec maximum 1.5m wind speed for the hour (m s-1)
 }
 \examples{
-data <- getWeatherData(FALSE,"Austin","TX")
-data <- getWeatherData(TRUE,"Austin",
-"TX",from="2018-01-10",
-to="2018-03-10",range=200)
+\dontrun{
+data <- getWeatherData(online=TRUE,
+location="Austin",state="TX",from="2017-01-10",
+to="2017-01-11")
 data <- getWeatherData(online=FALSE,
 location="Austin",state="TX",from="2017-01-10",
-to="2017-01-10",range=200)
+to="2017-01-11",range=120)
+}
 }

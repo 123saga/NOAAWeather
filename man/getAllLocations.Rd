@@ -18,8 +18,5 @@ Dataframe with Location ID, Location name and State
 get all locations information using API call
 }
 \examples{
-locations <- getAllLocations ()
-locations <- getAllLocations (FALSE)
-locations <- getAllLocations (state="CA")
 locations <- getAllLocations (online=FALSE,state="CA")
 }
