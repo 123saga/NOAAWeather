@@ -8,7 +8,7 @@
 #' @export
 #' @examples
 #' plot_spatial(online=FALSE,
-#' Date="2018-01-10",
+#' Date="2017-01-10",
 #' measure="t_max")
 #' @return geo-spatial heat map for a given date and measure across all NOAA weather stations
 plot_spatial <- function(online=TRUE,Date="2017-01-01", measure="t_max") {

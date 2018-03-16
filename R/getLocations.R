@@ -7,9 +7,6 @@
 #' @export
 #' @return Dataframe with Location ID, Location name and State
 #' @examples
-#' locations <- getAllLocations ()
-#' locations <- getAllLocations (FALSE)
-#' locations <- getAllLocations (state="CA")
 #' locations <- getAllLocations (online=FALSE,state="CA")
 getAllLocations <- function(online=TRUE,state=NA){
 

@@ -10,8 +10,8 @@
 #' @param state Valid two letter code of US state. Default: "MT"
 #' @export
 #' @examples
-#' plot_boxplot(online=TRUE,from="2018-01-01",
-#' to="2018-01-03", measure="t_max",
+#' plot_boxplot(online=FALSE,from="2017-01-01",
+#' to="2017-01-03", measure="t_max",
 #' location='Austin', state='TX')
 #' @return box plot for a given time period, measure, location, and state
 plot_boxplot <- function(online=TRUE, from='2017-01-01', to='2017-01-31', measure='t_max', location='Wolf Point',state='MT'){

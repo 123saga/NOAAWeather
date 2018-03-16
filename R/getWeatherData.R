@@ -34,13 +34,9 @@
 #' @importFrom utils data
 #' @export
 #' @examples
-#' data <- getWeatherData(FALSE,"Austin","TX")
-#' data <- getWeatherData(TRUE,"Austin",
-#' "TX",from="2018-01-10",
-#' to="2018-03-10",range=200)
 #' data <- getWeatherData(online=FALSE,
 #' location="Austin",state="TX",from="2017-01-10",
-#' to="2017-01-10",range=200)
+#' to="2017-01-20",range=200)
 #' @return a dataframe of with all the metrics mentioned at hourly granularity
 getWeatherData  <- function(online=TRUE,
                             location,
