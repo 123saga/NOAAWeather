@@ -27,5 +27,7 @@ time series plot for a given time period, measure, location, and state
 generate time series plot for a given time period, measure, location, and state
 }
 \examples{
-plot_tseries(online=TRUE,from="2018-01-01", to="2018-01-03", measure="t_max", location='Austin', state='TX')
+plot_tseries(online=TRUE,from="2018-01-01",
+to="2018-01-03", measure="t_max",
+location='Austin', state='TX')
 }

@@ -7,7 +7,9 @@
 #' @param measure metric for which geo-spatial heat map is needed. Default: "t_max"
 #' @export
 #' @examples
-#' plot_spatial(online=TRUE,Date="2018-01-10", measure="t_max")
+#' plot_spatial(online=FALSE,
+#' Date="2018-01-10",
+#' measure="t_max")
 #' @return geo-spatial heat map for a given date and measure across all NOAA weather stations
 plot_spatial <- function(online=TRUE,Date="2017-01-01", measure="t_max") {
 

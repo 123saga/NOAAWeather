@@ -4,7 +4,7 @@ Title: Get Weather Data from NOAA weather stations
 Version: 0.1.0
 Date: 2018-03-15
 Author: Sagar Ganapaneni <123saga@gmail.com>, Vikramjeet Singh <vikram.dceian@gmail.com>
-Maintainer: Sagar Ganapaneni <123saga@gmail.com>, Vikramjeet Singh <vikram.dceian@gmail.com>
+Maintainer: Sagar Ganapaneni <123saga@gmail.com>
 Description: Functions to retrieve real-time Weather data from all NOAA stations
     and plot time series, boxplot, calander heatmap and geo spatial maps to analyze trends.
 Depends:

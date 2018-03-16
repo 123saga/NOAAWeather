@@ -38,6 +38,10 @@ get Weather data from NOAA Web API for a given location, time period, and distan
 }
 \examples{
 data <- getWeatherData(FALSE,"Austin","TX")
-data <- getWeatherData(TRUE,"Austin","TX",from="2018-01-10", to="2018-03-10",range=200)
-data <- getWeatherData(online=FALSE,location="Austin",state="TX",from="2017-01-10", to="2017-03-10",range=200)
+data <- getWeatherData(TRUE,"Austin",
+"TX",from="2018-01-10",
+to="2018-03-10",range=200)
+data <- getWeatherData(online=FALSE,
+location="Austin",state="TX",from="2017-01-10",
+to="2017-01-10",range=200)
 }

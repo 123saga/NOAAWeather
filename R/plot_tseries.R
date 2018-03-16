@@ -10,7 +10,9 @@
 #' @param state Valid two letter code of US state. Default: "MT"
 #' @export
 #' @examples
-#' plot_tseries(online=TRUE,from="2018-01-01", to="2018-01-03", measure="t_max", location='Austin', state='TX')
+#' plot_tseries(online=TRUE,from="2018-01-01",
+#' to="2018-01-03", measure="t_max",
+#' location='Austin', state='TX')
 #' @return time series plot for a given time period, measure, location, and state
 plot_tseries <- function(online=TRUE,from='2017-01-01', to='2017-01-31', measure='t_max', location='Wolf Point',state='MT'){
 

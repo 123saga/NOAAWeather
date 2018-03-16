@@ -11,7 +11,9 @@
 #' @param text if TRUE, print the values of each day on heatmap, if FALSE values are not printed
 #' @export
 #' @examples
-#' plot_calhmap(online=TRUE,from="2018-01-01", to="2018-01-03", measure="t_max", location='Austin', state='TX')
+#' plot_calhmap(online=TRUE,from="2018-01-01",
+#' to="2018-01-03", measure="t_max",
+#' location='Austin', state='TX')
 #' @return calendar heat map for a given time period, measure, location, and state
 plot_calhmap <- function(online=TRUE,from='2017-01-01', to='2017-01-31', measure='t_max', location='Wolf Point',state='MT', text=TRUE){
 
